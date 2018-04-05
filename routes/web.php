@@ -14,3 +14,43 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/welcome', function () {
+    return view('welcome');
+});
+
+Route::get('/example', function () {
+    return 'hello there!';
+});
+
+Route::any('/practice/{n?}', 'PracticeController@index');
+
+
+//Route::get('/BillSplit/index', 'BillSplitController@index');
+//Route::get('/Test/store', 'TestController@store');
+//Route::post('/Test/store', 'TestController@index');
+
+Route::get('/Test/store', 'TestController@store');
+Route::get('/Test/index', 'TestController@index');
+//Route::post('/Test/index', 'TestController@index');
+
+Route::get('post/create', 'PostController@create');
+
+Route::post('post', 'PostController@store');
+
+//Route::get('/Test/create', 'TestController@create');
+//Route::get('/Test/index', 'TestController@index');
+
+Route::get('/BillSplitter', function () {
+    return view('BillSplitter');
+});
+
+/*
+Route::get('/BillSplit', function () {
+    return view('BillSplit.index');
+});
+
+
+
+
+
