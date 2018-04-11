@@ -15,11 +15,7 @@ class BillController extends Controller
             'manyWays' => '',
             'serviceQuality'     => '',
             'round'      => '',
-            'tips'         => '',
-            'total'        => '',
-            'tipsPp'       => '',
             'tabNumPp'    => '',
-            'totalPp'      => '',
         ]);
     }
 
