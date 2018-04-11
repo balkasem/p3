@@ -15,7 +15,12 @@ class TestController extends Controller
     {
 
         //$manyWays = $request->input('manyWays');
-        return view('BillSplit.create');
+        return view('BillSplit.create')->with([
+            'manyWays' => '',
+            'round' => '',
+            'tabNum' => '',
+            'serviceQuality' => '',
+        ]);
         //
     }
 

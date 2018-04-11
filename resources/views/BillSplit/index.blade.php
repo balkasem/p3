@@ -10,7 +10,7 @@
     Bill Splitter Application
 </header>
 <section>
-    <form method='get' action='/p3/public/Test/store'>
+    <form method='post' action='/p3/public/Test/store'>
         <fieldset>
             <label for='searchTerm'>Split how many ways?</label>
             <input type='text' name='manyWays' id='manyWays' value='{{ $manyWays }}' >

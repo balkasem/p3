@@ -11,9 +11,12 @@
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
 });
+*/
+Route::get('/', 'BillController@index');
+Route::post('/', 'BillController@calculate');
 
 Route::get('/welcome', function () {
     return view('welcome');
